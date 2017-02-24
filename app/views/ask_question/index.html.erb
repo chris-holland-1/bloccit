@@ -1,0 +1,4 @@
+<h1>All Ask Questions</h1>
+<% @ask_questions.each do |ask_question| %>
+  <p><%= link_to ask_question.title, ask_question %></p>
+<% end %>

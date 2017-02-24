@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :ask_questions
+
   resources :posts
 
   get 'about' => 'welcome#about'
