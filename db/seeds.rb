@@ -8,6 +8,15 @@
 
 require 'random_data'
 
+# Create Sponsored Posts
+15.times do
+  SponsoredPost.create!(
+    title: RandomData.random_sentence,
+    body: RandomData.random_paragraph,
+    price: 99
+  )
+end
+
 # Create Topics
 15.times do
   Topic.create!(
