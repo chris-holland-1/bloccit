@@ -2,8 +2,12 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
 
+<<<<<<< HEAD
   let(:my_topic) { Topic.create!(name: RandomData.random_sentence, description: RandomData.random_paragraph) }
 
+=======
+  let(:my_topic) { Topic.create!(name:  RandomData.random_sentence, description: RandomData.random_paragraph) }
+>>>>>>> checkpoint-22-redo
   let(:my_post) { my_topic.posts.create!(title: RandomData.random_sentence, body: RandomData.random_paragraph) }
 
   describe "GET show" do
@@ -84,6 +88,7 @@ RSpec.describe PostsController, type: :controller do
       new_body = RandomData.random_paragraph
 
       put :update, topic_id: my_topic.id, id: my_post.id, post: {title: new_title, body: new_body}
+
       updated_post = assigns(:post)
       expect(updated_post.id).to eq my_post.id
       expect(updated_post.title).to eq new_title
