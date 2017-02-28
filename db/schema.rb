@@ -11,9 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170228183000) do
-=======
 ActiveRecord::Schema.define(version: 20170226014937) do
 
   create_table "advertisements", force: :cascade do |t|
@@ -23,7 +20,6 @@ ActiveRecord::Schema.define(version: 20170226014937) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
->>>>>>> 20343afe45804b3a66de32db83f8b01122f853a4
 
   create_table "answers", force: :cascade do |t|
     t.text     "body"
