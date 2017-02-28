@@ -14,7 +14,13 @@ RSpec.describe Topic, type: :model do
     end
 
     it "is public by default" do
+<<<<<<< HEAD
        expect(topic.public).to be(true)
      end
    end
+=======
+      expect(topic.public).to be(true)
+    end
+  end
+>>>>>>> 20343afe45804b3a66de32db83f8b01122f853a4
 end
