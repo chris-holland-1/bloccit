@@ -60,3 +60,6 @@ group :development do
 end
 
 gem 'bootstrap-sass'
+
+# Used for encrypting User password
+gem 'bcrypt'
