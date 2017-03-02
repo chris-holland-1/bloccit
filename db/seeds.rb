@@ -9,7 +9,6 @@
 require 'random_data'
 
 # Create Topics
-<<<<<<< HEAD
  15.times do
    Topic.create!(
      name:         RandomData.random_sentence,
@@ -17,24 +16,11 @@ require 'random_data'
    )
  end
  topics = Topic.all
-=======
-15.times do
-  Topic.create!(
-    name: RandomData.random_sentence,
-    description: RandomData.random_paragraph
-  )
-end
-topics = Topic.all
->>>>>>> 20343afe45804b3a66de32db83f8b01122f853a4
 
 # Create Posts
 50.times do
   Post.create!(
-<<<<<<< HEAD
-    topic:  topics.sample,
-=======
     topic: topics.sample,
->>>>>>> 20343afe45804b3a66de32db83f8b01122f853a4
     title: RandomData.random_sentence,
     body: RandomData.random_paragraph
   )

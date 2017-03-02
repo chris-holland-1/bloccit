@@ -1,26 +1,5 @@
 <h1>Topics</h1>
 
-<<<<<<< HEAD
- <div class="row">
-   <div class="col-md-8">
-     <% @topics.each do |topic| %>
-       <div class="media">
-         <div class="media-body">
-           <h4 class="media-heading">
-             <%= link_to topic.name, topic %>
-           </h4>
-           <small>
-             <%= topic.description %>
-           </small>
-         </div>
-       </div>
-     <% end %>
-   </div>
-   <div class="col-md-4">
-     <%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
-   </div>
- </div>
-=======
 <div class="row">
   <div class="col-md-8">
     <% @topics.each do |topic| %>
@@ -39,5 +18,4 @@
   <div class="col-md-4">
     <%=link_to "New Topic", new_topic_path, class: 'btn btn-success' %>
   </div>
-</div>  
->>>>>>> 20343afe45804b3a66de32db83f8b01122f853a4
+</div> 
